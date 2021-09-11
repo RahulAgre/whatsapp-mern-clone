@@ -3,3 +3,104 @@
   flex-direction: column;
   flex: 0.65;
 }
+
+.chat__header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat__headerInfo > h3 {
+  color: lightgray;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.chat__headerInfo > p {
+  color: rgba(211, 211, 211, 0.753);
+}
+
+.chat__body {
+  flex: 1;
+  background-image: url("https://wallpaperaccess.com/full/2224368.png");
+  background-repeat: repeat;
+  padding: 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chat__body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat__body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.chat__body::-webkit-scrollbar-thumb {
+  background-color: #33383b;
+  border-radius: 100px;
+}
+
+.chat__meassage {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #262d31;
+  margin-bottom: 30px;
+}
+
+.chat__timestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+
+.chat__name {
+  position: absolute;
+  top: -15px;
+  font-weight: 800px;
+  font-size: x-small;
+}
+
+.chat__reciever {
+  margin-left: auto;
+  background-color: #1c6061;
+}
+
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid #50575c;
+}
+
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+}
+
+.chat__footer > form > input {
+  flex: 1;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  background-color: #33383b;
+  caret-color: whitesmoke;
+}
+
+.chat__footer > form > button {
+  display: none;
+}
+
+.chat__footer > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
+}
