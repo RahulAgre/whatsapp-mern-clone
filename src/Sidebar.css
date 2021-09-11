@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   flex: 0.35;
+  border-right: 1px solid #394045;
 }
 
 .sidebar__header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  border-right: 1px solid #394045;
 }
 
 .sidebar__headerRight {
