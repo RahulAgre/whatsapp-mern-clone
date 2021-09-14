@@ -1,5 +1,6 @@
 // importing
 import express from "express";
+import mongoose from "mongoose";
 
 //app config
 const app = express();
@@ -8,6 +9,35 @@ const port = process.env.PORT || 9000;
 //middleware
 
 //DB config
+const connection_url =
+  "mongodb+srv://admin:XyUwv1H0Wn7duBGK@cluster0.aqjzo.mongodb.net/whatsappdb?retryWrites=true&w=majorityy";
+/*
+mongoose.connect(
+  connection_url,
+  {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  (err) => {
+    if (err) throw err;
+    console.log("Connected to MongoDB!!!");
+  }
+);
+*/
+
+mongoose.connect(
+  connection_url,
+  {
+    useNewUrlParser: true,
+
+    useUnifiedTopology: true,
+  },
+  (err) => {
+    if (err) throw err;
+    console.log("Connected to MongoDB!!!");
+  }
+);
 
 //???
 
